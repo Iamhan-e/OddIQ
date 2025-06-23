@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Homepage extends StatelessWidget{
+class HomeScreen extends StatelessWidget{
 
-  const Homepage(this.startQuiz, {super.key});
+  const HomeScreen(this.startQuiz, {super.key});
 
   final void Function() startQuiz;
   @override

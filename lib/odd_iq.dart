@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/homepage.dart';
+import 'package:quiz_app/home_screen.dart';
 import 'package:quiz_app/questions_screen.dart';
 
 class OddIq extends StatefulWidget {
@@ -20,7 +20,7 @@ class _OddIqState extends State<OddIq> {
  @override
  void initState() { 
    super.initState();
-   activeScreen= Homepage(switchScreen);
+   activeScreen= HomeScreen(switchScreen);
  }
 
  void switchScreen(){
