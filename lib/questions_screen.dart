@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class QuestionsPage extends StatefulWidget {
+class QuestionsScreen extends StatefulWidget {
 
-  const QuestionsPage({super.key});
+  const QuestionsScreen({super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -10,7 +10,7 @@ class QuestionsPage extends StatefulWidget {
   }
 }
 
-class _QuestionPageState extends State<QuestionsPage>{
+class _QuestionPageState extends State<QuestionsScreen>{
   
   @override
   Widget build(BuildContext context) {

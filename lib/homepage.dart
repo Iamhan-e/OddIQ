@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget{
 
-  const Homepage({super.key});
+  const Homepage(this.startQuiz, {super.key});
 
+  final void Function() startQuiz;
   @override
   Widget build(BuildContext context) {
+
     return Center(
            child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -26,7 +28,9 @@ class Homepage extends StatelessWidget{
                 height: 60
                 ),
             ElevatedButton.icon(
-              onPressed: (){}, 
+              onPressed: (){
+                startQuiz();
+                }, 
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 foregroundColor: const Color.fromARGB(255, 242, 255, 60),

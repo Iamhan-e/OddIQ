@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/homepage.dart';
+import 'package:quiz_app/questions_screen.dart';
 
 class OddIq extends StatefulWidget {
   const OddIq({super.key});
@@ -14,6 +15,20 @@ class OddIq extends StatefulWidget {
 
 class _OddIqState extends State<OddIq> {
  
+ Widget? activeScreen;
+
+ @override
+ void initState() { 
+   super.initState();
+   activeScreen= Homepage(switchScreen);
+ }
+
+ void switchScreen(){
+
+  setState(() {
+    activeScreen= QuestionsScreen();
+  });
+ }
 
  @override
  Widget build(BuildContext context) {
@@ -30,7 +45,7 @@ class _OddIqState extends State<OddIq> {
           ),
           
          ),
-         child: Homepage(),
+         child: activeScreen,
         
         )
         
