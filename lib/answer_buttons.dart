@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/data/questions.dart';
+
 
 class AnswerButtons extends StatelessWidget{
 
@@ -21,7 +21,13 @@ class AnswerButtons extends StatelessWidget{
       ),
       
       child: 
-        Text(answers),
+        Text(
+          answers,
+          style: TextStyle(
+            
+          ),
+          
+        ),
         
        
       );
